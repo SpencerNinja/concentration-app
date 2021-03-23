@@ -35,6 +35,12 @@ class ViewController: UIViewController {
         }
     }
     
+    // TODO: new game button
+    // where should it be located?
+    @IBAction func resetGame(_ sender: UIButton) {
+        updateViewFromModel()
+    }
+    
     private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -66,8 +72,6 @@ class ViewController: UIViewController {
         return emoji[card.identifier] ?? "?"
     }
     
-    // TODO: new game button
-    // where should it be located?
 }
 
 //extension Int {
