@@ -37,9 +37,13 @@ class ViewController: UIViewController {
     
     // TODO: new game button
     // where should it be located?
-    @IBAction func resetGame(_ sender: UIButton) {
-        updateViewFromModel()
+    // Components
+        // flip all cards to face down
+        // shuffle
+        // reset flip counter
+    @IBAction func newGame(_ sender: UIButton) {
     }
+    
     
     private func updateViewFromModel() {
         for index in cardButtons.indices {
