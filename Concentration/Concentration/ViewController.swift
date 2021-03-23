@@ -56,8 +56,11 @@ class ViewController: UIViewController {
     // var emoji = Dictionary<Int,String>()
     
      private func emoji(for card: Card) -> String {
-        if emoji[card.identifier] == nil, emojiChoices.count > 0 {
-            emoji[card.identifier] = emojiChoices.remove(at: emojiChoices.count.arc4random)
+        let randomNum = Int.random(in: 0..<emojiChoices.count)
+        if emoji[card.identifier] == nil,
+           emojiChoices.count > 0 {
+            emoji[card.identifier] = emojiChoices.remove(at: randomNum)
+            // emojiChoices.remove(at: emojiChoices.count.arc4random)
         }
         
         return emoji[card.identifier] ?? "?"
@@ -67,14 +70,14 @@ class ViewController: UIViewController {
     // where should it be located?
 }
 
-extension Int {
-    var arc4random: Int {
-        if self > 0 {
-            return Int(arc4random_uniform(UInt32(self)))
-        } else if self < 0 {
-            return -Int(arc4random_uniform(UInt32(abs(self))))
-        } else {
-            return 0
-        }
-    }
-}
+//extension Int {
+//    var arc4random: Int {
+//        if self > 0 {
+//            return Int(arc4random_uniform(UInt32(self)))
+//        } else if self < 0 {
+//            return -Int(arc4random_uniform(UInt32(abs(self))))
+//        } else {
+//            return 0
+//        }
+//    }
+//}
