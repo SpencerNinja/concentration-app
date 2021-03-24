@@ -16,17 +16,6 @@ struct Concentration {
             // look at all the cards and see if you find only one that's face up
             // if so, return it, else return nil
             return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly
-//            var foundIndex: Int?
-//            for index in cards.indices {
-//                if cards[index].isFaceUp {
-//                    if foundIndex == nil {
-//                        foundIndex = index
-//                    } else {
-//                        return nil
-//                    }
-//                }
-//            }
-//            return foundIndex
         }
         set {
             // turn all the cards face down except the card at index newValue
@@ -51,11 +40,6 @@ struct Concentration {
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
-//        if cards[index].isFaceUp {
-//            cards[index].isFaceUp = false
-//        } else {
-//            cards[index].isFaceUp = true
-//        }
     }
     
     init(numberOfPairsOfCards: Int) {

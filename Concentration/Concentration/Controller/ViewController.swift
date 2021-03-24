@@ -51,11 +51,12 @@ class ViewController: UIViewController {
     
     // TODO: new game button
     // where should it be located?
-    // Components
-        // flip all cards to face down
-        // shuffle
-        // reset flip counter
     @IBAction func newGame(_ sender: UIButton) {
+        // reset flip counter
+        flipCount = 0
+        // regenerate and flip all cards to face down
+        game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
+        // shuffle
     }
     
     
