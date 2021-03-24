@@ -139,9 +139,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qn-Ra-qRd">
-                                <rect key="frame" x="128" y="580" width="158" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qn-Ra-qRd">
+                                <rect key="frame" x="147.5" y="766" width="119" height="42"/>
                                 <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="New Game">
@@ -155,8 +154,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5Qn-Ra-qRd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F3v-Qr-xzQ"/>
                             <constraint firstItem="0ue-pZ-F0f" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Nn-tX-Oot" secondAttribute="bottom" constant="8" symbolic="YES" id="VeO-b0-t39"/>
+                            <constraint firstItem="0ue-pZ-F0f" firstAttribute="firstBaseline" secondItem="5Qn-Ra-qRd" secondAttribute="baseline" constant="56" symbolType="layoutAnchor" id="Vv4-Ds-tyM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ue-pZ-F0f" secondAttribute="bottom" id="YCP-Gf-3Ad"/>
+                            <constraint firstItem="5Qn-Ra-qRd" firstAttribute="top" secondItem="8Nn-tX-Oot" secondAttribute="bottom" constant="490" id="cgl-B0-fIe"/>
                             <constraint firstItem="0ue-pZ-F0f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oQc-ab-Naz"/>
                             <constraint firstItem="8Nn-tX-Oot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pT6-ck-shp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Nn-tX-Oot" secondAttribute="trailing" constant="20" id="pYb-Cm-sox"/>
