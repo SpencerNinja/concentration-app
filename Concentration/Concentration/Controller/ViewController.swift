@@ -56,7 +56,8 @@ class ViewController: UIViewController {
         flipCount = 0
         // regenerate and flip all cards to face down
         game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
-        // shuffle
+        emojiChoices = "🦇😱🙀😈🎃👻😬😳🍬🍫"
+        updateViewFromModel()
     }
     
     
