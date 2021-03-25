@@ -60,7 +60,6 @@ class ViewController: UIViewController {
         updateViewFromModel()
     }
     
-    
     private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
