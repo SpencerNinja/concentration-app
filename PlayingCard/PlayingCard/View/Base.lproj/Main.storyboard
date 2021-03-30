@@ -26,6 +26,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="rank">
                                         <integer key="value" value="7"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value="♣️"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -40,6 +41,9 @@
                             <constraint firstItem="8j2-4p-R3t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="To9-NV-PWl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="8j2-4p-R3t" id="0K8-rq-fMI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
