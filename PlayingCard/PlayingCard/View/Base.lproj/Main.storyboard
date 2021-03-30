@@ -22,6 +22,11 @@
                                     <constraint firstAttribute="width" secondItem="8j2-4p-R3t" secondAttribute="height" multiplier="5:8" id="Dab-Uz-NdX"/>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="IwD-jV-1wW"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rank">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
