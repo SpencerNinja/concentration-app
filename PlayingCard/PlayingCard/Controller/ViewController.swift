@@ -14,11 +14,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        for ) in 1...10 {
-            if let card = deck.draw() {
-                print("\(card)")
-            }
-        }
+        
+        
+        // Print debug
+//        for _ in 1...10 {
+//            if let card = deck.draw() {
+//                print("\(card)")
+//            }
+//        }
     }
 
 
